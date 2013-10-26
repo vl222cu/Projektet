@@ -75,15 +75,16 @@ footer
     margin-top: -90px;
     padding-right: 50px;
     padding-left: 20px;
-    background: yellow;
 }
 
 #sidecolumn
 {
     width: 600px;
     float: left;
+    margin-top: -30px;
     padding-bottom: 50px;
 }
+
 
 /*<-------------HUVUDHUVUDMENY-------------->*/
 
