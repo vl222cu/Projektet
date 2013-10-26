@@ -39,37 +39,43 @@
 
     <main>
     
-    <div>
+    <div id="maincolumn">
+    <header>
     <h1>Kontakta mig</h1>
-    <p><strong>Adress: </strong><br />
+    </header>
+    
+    <p><strong>Adress:</strong><br />
     Storvägen 1<br />
     503 30 Borås<br />
     Tel:<a class="tel" href="tel:033123456"> 033-12 34 56</a><br />
-    E-Post: <a href="mailto:vivisprojekt@outlook.com">påhittad@epost.com</a></p>
+    E-Post: <a href="mailto:vivisprojekt@outlook.com">fictional@email.com</a></p>
     </div>
     
-    <div>
-    <p><strong>Vänligen fyll i dina kontaktuppgifter och din förfrågan så kontaktar
+    <div id="sidecolumn">
+    <p><strong>Vänligen fyll i dina kontaktuppgifter och meddelande så kontaktar
     jag dig så fort jag kan.</strong></p>
     
-    <form id="form" name="form" method="post" action="mailto:vivisprojekt@outlook.com">
-
-    <fieldset>
-        <legend>Kontaktuppgifter</legend>
-
-        <p><label for="fnamn">Förnamn:</label></p>
-        <p><input type="text" name="fnamn" id="fnamn" size="30" /></p>
-        <p><label for="enamn">Efternamn:</label></p>
-        <p><input type="text" name="enamn" id="enamn" size="30" /></p>
-        <p><label for="epost">E-postadress:</label></p>
-        <p><input type="text" name="epost" id="epost" size="30" /></p>
-        <p><label for="meddelande">Meddelande:</label></p>
-        <p><textarea name="meddelande" id="meddelande" cols="50" rows="5"></textarea></p>
-        <p><button type="submit">Skicka meddelandet</button></p>
-    
-    </fieldset>
-    
-    </form>
+        <form class="form" name="form" method="post" action="mailto:vivisprojekt@outlook.com">
+            
+            <fieldset>
+            
+            <p><label for="namn">Namn:</label></p>
+            <p><input type="text" name="name" id="namn" placeholder="För -och efternamn" /></p>
+            
+            <p><label for="tel">Telefon:</label></p>
+            <p><input type="tel" name="phoneNr" id="tel" placeholder="Glöm inte riktnummer" /></p>
+            
+            <p><label for="epost">E-postadress:</label></p>
+            <p><input type="text" name="epost" id="epost" placeholder="email@exempel.com" /></p>
+            
+            <p><label for="meddelande">Meddelande:</label></p>
+            <p><textarea name="meddelande" id="meddelande" cols="50" rows="5" 
+            placeholder="Alla frågor och funderingar är välkomna här!" ></textarea></p>
+            
+            <p><button type="submit">Skicka meddelandet</button></p>
+            
+            </fieldset>
+        </form>
     </div>
     
     </main>

@@ -45,17 +45,14 @@ footer
 {
     float: left;
     width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 12px;
     text-align: center;
+    background: #76819E;
+    color: #FFF;
 }    
-
-
-.breadcrumb 
-{
-    clear: left;
-    padding: 6px 0;
-    font-size: 10px;
-}
 
 #container
 {
@@ -63,7 +60,32 @@ footer
     margin: auto;
 }
 
-/*<-------------HUVUDMENY-------------->*/
+.breadcrumb 
+{
+    clear: left;
+    padding: 10px 0;
+    font-size: 10px;
+    border-bottom: solid #676B6B 1px;
+}
+
+#maincolumn
+{
+    width: 290px;
+    float: left;
+    margin-top: -90px;
+    padding-right: 50px;
+    padding-left: 20px;
+    background: yellow;
+}
+
+#sidecolumn
+{
+    width: 600px;
+    float: left;
+    padding-bottom: 50px;
+}
+
+/*<-------------HUVUDHUVUDMENY-------------->*/
 
 
 #menu ul,
@@ -122,15 +144,13 @@ footer
 	background:-moz-linear-gradient( center top, #263966 5%, #79bbff 100% );
 	background: -o-linear-gradient(top, #263966 5%, #79bbff 100%);
 	background: -ms-linear-gradient(top, #263966 5%, #79bbff 100%);
-	background: linear-gradient(top, #263966 5%, #79bbff 100%);
-}
+	background: linear-gradient(top, #263966 5%, #79bbff 100%);}
 
 #menu li:first-child a 
 {
     -moz-border-radius: 5px 0 0 5px;
     -webkit-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-}
+    border-radius: 5px 0 0 5px;}
 
 #menu li:last-child a 
 {
@@ -138,6 +158,8 @@ footer
     -webkit-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0;
 }
+
+/*<-------------SUBMENY-------------->*/
 
 /*<-------------SUBMENY-------------->*/
 
@@ -192,20 +214,14 @@ footer
     background: #676B6B;
     color: #FFF;
 }
-
-/*<----------TYPOGRAFI----------->*/
-
-
-
-
-/*<----------FOOTERINSTÄLLNING----------->*/
-
 .clear 
 {
     clear: both;
 }
 
-/*<----------INSTÄLLNINGAR FÖR CSSKNAPPAR----------->*/
+
+/*<----------TYPOGRAFI----------->*/
+/*<----------INSTÄLLNINGAR FÖR CSSKNAPPARAR----------->*/
 
 a.button 
 {
@@ -233,7 +249,7 @@ a.button
 	text-indent:0;
 	border:1px solid #76819E;
 	display:inline-block;
-	color:#ffffff;
+	color:#FFFFFF;
 	font-family:Comic Sans MS;
 	font-size:12px;
 	font-weight:bold;
@@ -253,11 +269,68 @@ a.button:hover, a.button:focus
 	background:-moz-linear-gradient( center top, #263966 5%, #79bbff 100% );
 	background: -o-linear-gradient(top, #263966 5%, #79bbff 100%);
 	background: linear-gradient(top, #263966 5%, #79bbff 100%);
-	background-color:#263966;
 }
 
 a.button:active 
 {
 	position:relative;
-	top:1px;
+	top:55px;
 }
+
+/*<----------FORMULÄRINSTÄLLNINGAR----------->*/
+
+
+input, textarea 
+{   
+    width: 400px;
+    padding: 9px;  
+    border: solid 1px #EEE;  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #DDD), color-stop(1, #FFF)); 
+    background: -webkit-linear-gradient(top, #DDD 30%, #FFF 100%);
+    background: -moz-linear-gradient(top, #DDD 30%, #FFF 100%);
+    background: -o-linear-gradient(top, #DDD 30%, #FFF 100%);
+	background: linear-gradient(top, #DDD 30%, #FFF 100%);
+	-moz-box-shadow: rgba(0,0,0, 0.3) 0 0 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.3) 0 0 8px;
+    box-shadow: rgba(0,0,0, 0.3) 0 0 8px; 
+}
+
+  
+textarea 
+{   
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+}  
+  
+input:hover, 
+textarea:hover,  
+input:focus, 
+textarea:focus 
+{   
+    border-color: #BBB; 
+    -moz-box-shadow: rgba(0,0,0, 0.15) 0 0 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.15) 0 0 8px;
+    box-shadow: rgba(0,0,0, 0.15) 0 0 8px; 
+}  
+  
+.form label 
+{   
+    margin-left: 10px;   
+    color: #676B6B;   
+}  
+  
+button 
+{  
+    width: auto;  
+    padding: 9px 15px;  
+    border: 0;  
+    font-size: 14px;  
+    background: #76819E;
+    color: #FFF; 
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px;  
+    border-radius: 5px;
+} 
+
