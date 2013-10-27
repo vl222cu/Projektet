@@ -31,7 +31,7 @@ main
 
 body 
 {
-    font-family: "Raleway", "Arial", sans-serif;
+    font-family: "ABeeZee", "Arial", sans-serif;
 }
 
 nav
@@ -39,6 +39,8 @@ nav
     float: left;
     display: block;
     width: 100%;
+    margin-top: -36px;
+    margin-bottom: 30px;
 }
 
 footer
@@ -60,6 +62,22 @@ footer
     margin: auto;
 }
 
+#mainheader
+{
+    height: 170px;
+    background-image: url(../pics/Bluerose1.png);
+    background-repeat: repeat;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* För IE8 och tidigare */
+}
+
+#gallery
+{
+    margin-top: -90px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+}
+
 .breadcrumb 
 {
     clear: left;
@@ -72,7 +90,7 @@ footer
 {
     width: 290px;
     float: left;
-    margin-top: -90px;
+    margin-top: -80px;
     padding-right: 50px;
     padding-left: 20px;
 }
@@ -81,13 +99,14 @@ footer
 {
     width: 600px;
     float: left;
-    margin-top: -30px;
+    margin-top: -20px;
     padding-bottom: 50px;
 }
 
+/*<-------------BILDINSTÄLLNINGAR-------------->*/
+
 
 /*<-------------HUVUDHUVUDMENY-------------->*/
-
 
 #menu ul,
 #menu li,
@@ -160,7 +179,7 @@ footer
     border-radius: 0 5px 5px 0;
 }
 
-/*<-------------SUBMENY-------------->*/
+
 
 /*<-------------SUBMENY-------------->*/
 
@@ -321,6 +340,30 @@ textarea:focus
     margin-left: 10px;   
     color: #676B6B;   
 }  
+
+::-webkit-input-placeholder 
+{
+   font-family: "ABeeZee", "Arial", sans-serif;
+   color: #888;
+}
+
+::-moz-placeholder 
+{ 
+   font-family: "ABeeZee", "Arial", sans-serif;
+   color: #888; 
+}
+
+:-moz-placeholder 
+{ 
+   font-family: "ABeeZee", "Arial", sans-serif;
+   color: #888; 
+}
+
+:-ms-input-placeholder 
+{  
+   font-family: "ABeeZee", "Arial", sans-serif;
+   color: #888;  
+}
   
 button 
 {  
