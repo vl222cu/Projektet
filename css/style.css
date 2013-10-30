@@ -18,13 +18,13 @@ summary
 header
 {
     float: left;
-    width: 100%;
+    width: 960px;
 }
 
 main
 {
     float: left;
-    width: 100%;
+    width: 960px;
     margin-top: 10%;
     position: relative;
 }
@@ -38,7 +38,7 @@ nav
 {
     float: left;
     display: block;
-    width: 100%;
+    width: 960px;
     margin-top: -36px;
     margin-bottom: 30px;
 }
@@ -46,7 +46,7 @@ nav
 footer
 {
     float: left;
-    width: 100%;
+    width: 960px;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -294,7 +294,7 @@ a.button:hover, a.button:focus
 a.button:active 
 {
 	position:relative;
-	top:55px;
+	top:5px;
 }
 
 /*<----------FORMULÄRINSTÄLLNINGAR----------->*/

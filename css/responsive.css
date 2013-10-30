@@ -1,0 +1,409 @@
+/*<------------STRUKTUR------------>*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary 
+{
+    display: block;
+}
+
+header
+{
+    float: left;
+    width: 100%;
+}
+
+main
+{
+    float: left;
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+}
+
+body 
+{
+    font-family: "ABeeZee", "Arial", sans-serif;
+}
+
+nav
+{
+    float: left;
+    display: block;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+footer
+{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 60%;
+    text-align: center;
+    background: #76819E;
+    color: #FFF;
+}    
+
+#container
+{
+    width: 90%;
+    margin: auto;
+}
+
+#mainheader
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(../pics/Bluerose1.png);
+    background-repeat: repeat;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* För IE8 och tidigare*/
+}
+
+#gallery
+{
+    margin-top: -10%;
+    margin-bottom: 10%;
+    padding-left: 2%;
+}
+
+.breadcrumb 
+{
+    clear: left;
+    padding: 2% 0;
+    font-size: 10px;
+    border-bottom: solid #676B6B 1px;
+}
+
+#maincolumn
+{
+    width: 50%;
+    float: left;
+    margin-top: -10%;
+    padding-right: 5%;
+    padding-left: 3%;
+}
+
+#sidecolumn
+{
+    width: 50%;
+    float: left;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/*<-------------BILDINSTÄLLNINGAR-------------->*/
+
+
+/*<-------------HUVUDHUVUDMENY-------------->*/
+
+#menu ul,
+#menu li,
+#menu span,
+#menu a 
+{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    text-align: center;
+}
+
+#menu a 
+{
+    color: #FFF;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #eeeeee;
+}
+
+#menu ul 
+{
+    list-style: none;
+}
+
+#menu > ul > li 
+{
+    float: left;
+}
+
+#menu > ul > li a 
+{
+    -moz-box-shadow: inset 0 0 0 1px #76819E;
+    -webkit-box-shadow: inset 0 0 0 1px #76819E;
+    box-shadow: inset 0 0 0 1px #76819E;
+    background: -moz-linear-gradient(center top, #76819E 5%, #A7B3CE 100%);
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #76819E), color-stop(1, #A7B3CE) );
+    background: -webkit-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+    background: -o-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+    background: -ms-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+    background: linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+    border-bottom: 1px solid #d2d2d2;
+    border-top: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    line-height: 34px;
+    padding: 0 35px;
+}
+
+#menu a:hover 
+{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #263966), color-stop(1, #79bbff) );
+	background: -webkit-linear-gradient(top, #263966 5%, #79bbff 100%);
+	background:-moz-linear-gradient( center top, #263966 5%, #79bbff 100% );
+	background: -o-linear-gradient(top, #263966 5%, #79bbff 100%);
+	background: -ms-linear-gradient(top, #263966 5%, #79bbff 100%);
+	background: linear-gradient(top, #263966 5%, #79bbff 100%);}
+
+#menu li a
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#menu li:first-child a 
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;}
+
+#menu li:last-child a 
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/*<-------------SUBMENY-------------->*/
+
+#menu .sub:hover ul 
+{
+    display: block;
+}
+
+#menu .sub ul 
+{
+    display: none;
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+
+#menu .sub ul li 
+{
+    text-align: center;
+}
+
+#menu .sub ul li a 
+{
+    border-top: 0 none;
+    border-left: 1px solid #d2d2d2;
+    display: block;
+    font-size: 12px;
+    line-height: 130%;
+    padding: 9px 5px;
+    text-align: center;
+}
+
+#menu .sub li a 
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#menu .sub li:first-child a 
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#menu .sub li:last-child a 
+{
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5pxx;
+}
+
+#menu ul #current 
+{
+    background: #676B6B;
+    color: #FFF;
+}
+.clear 
+{
+    clear: both;
+}
+
+
+/*<----------TYPOGRAFI----------->*/
+
+h1
+{
+    font-size: 100%;
+}
+
+p
+{
+    font-size: 70%;
+}
+
+
+/*<----------INSTÄLLNINGAR FÖR CSSKNAPPARAR----------->*/
+
+a.button 
+{
+	-moz-box-shadow: inset 0 -5px 0 0 #76819E;
+	-webkit-box-shadow: inset 0 -5px 0 0 #76819E;
+	box-shadow:inset 0 -5px 0 0 #76819E;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #76819E), color-stop(1, #A7B3CE));
+	background: -webkit-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+	background:-moz-linear-gradient( center top, #76819E 5%, #A7B3CE 100% );
+	background: -o-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+	background: linear-gradient(top, #76819E 5%, #A7B3CE 100%);
+	background-color:#76819E;
+	-webkit-border-top-left-radius:15px;
+	-moz-border-radius-topleft:15px;
+	border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+	-moz-border-radius-topright:15px;
+	border-top-right-radius:15px;
+	-webkit-border-bottom-right-radius:15px;
+	-moz-border-radius-bottomright:15px;
+	border-bottom-right-radius:15px;
+	-webkit-border-bottom-left-radius:15px;
+	-moz-border-radius-bottomleft:15px;
+	border-bottom-left-radius:15px;
+	text-indent:0;
+	border:1px solid #76819E;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family: "ABeeZee", "Arial", sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:100%x;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:3px 3px 0 #606676;
+}
+
+a.button:hover, a.button:focus
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #263966), color-stop(1, #79bbff) );
+	background: -webkit-linear-gradient(top, #263966 5%, #79bbff 100%);
+	background:-moz-linear-gradient( center top, #263966 5%, #79bbff 100% );
+	background: -o-linear-gradient(top, #263966 5%, #79bbff 100%);
+	background: linear-gradient(top, #263966 5%, #79bbff 100%);
+}
+
+a.button:active 
+{
+	position:relative;
+	top:5px;
+}
+
+/*<----------FORMULÄRINSTÄLLNINGAR----------->*/
+
+
+input, textarea 
+{   
+    width: 150%;
+    padding: 8%;  
+    border: solid 1px #EEE;  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #DDD), color-stop(1, #FFF)); 
+    background: -webkit-linear-gradient(top, #DDD 30%, #FFF 100%);
+    background: -moz-linear-gradient(top, #DDD 30%, #FFF 100%);
+    background: -o-linear-gradient(top, #DDD 30%, #FFF 100%);
+	background: linear-gradient(top, #DDD 30%, #FFF 100%);
+	-moz-box-shadow: rgba(0,0,0, 0.3) 0 0 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.3) 0 0 8px;
+    box-shadow: rgba(0,0,0, 0.3) 0 0 8px; 
+}
+
+  
+textarea 
+{   
+    width: 150%;  
+    height: 100%;  
+    line-height: 150%;  
+}  
+  
+input:hover, 
+textarea:hover,  
+input:focus, 
+textarea:focus 
+{   
+    border-color: #BBB; 
+    -moz-box-shadow: rgba(0,0,0, 0.15) 0 0 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.15) 0 0 8px;
+    box-shadow: rgba(0,0,0, 0.15) 0 0 8px; 
+}  
+
+label
+{
+   font-size: 80%; 
+}
+
+.form label 
+{   
+  
+    color: #676B6B;   
+}  
+
+::-webkit-input-placeholder 
+{
+   font-family: "ABeeZee", "Arial", sans-serif;
+   font-size: 80%;
+   color: #888;
+}
+
+::-moz-placeholder 
+{ 
+   font-family: "ABeeZee", "Arial", sans-serif;
+   font-size: 80%;
+   color: #888; 
+}
+
+:-moz-placeholder 
+{ 
+   font-family: "ABeeZee", "Arial", sans-serif;
+   font-size: 80%;
+   color: #888; 
+}
+
+:-ms-input-placeholder 
+{  
+   font-family: "ABeeZee", "Arial", sans-serif;
+   font-size: 80%;
+   color: #888;  
+}
+  
+button 
+{  
+    width: auto;  
+    padding: 3%;
+    font-size: 100%;  
+    background: #76819E;
+    color: #FFF; 
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px;  
+    border-radius: 5px;
+} 
