@@ -104,9 +104,6 @@ footer
     padding-bottom: 10%;
 }
 
-/*<-------------BILDINSTÄLLNINGAR-------------->*/
-
-
 /*<-------------HUVUDHUVUDMENY-------------->*/
 
 #menu ul,
@@ -407,3 +404,196 @@ button
     -moz-border-radius: 5px;  
     border-radius: 5px;
 } 
+
+/*<-------------BILDINSTÄLLNINGAR-------------->*/
+
+/*Inställning för kub-container där animationen sker*/
+#view
+{
+	width:450px;
+	height:300px;
+	-webkit-perspective: 450px;
+	-webkit-perspective-origin:50% 50%;
+}
+
+@-webkit-keyframes rotation {
+	from, to {  }
+    10%, 25% { -webkit-transform: rotateX(-90deg); 
+    transform: rotateX(-90deg);}
+    35%, 50% { -webkit-transform: rotateX(-180deg);	
+    transform: rotateX(-180deg);}
+    60%, 75% { -webkit-transform: rotateX(-270deg);	
+    transform: rotateX(-270deg);}
+    85%, 100% { -webkit-transform: rotateX(-360deg); 
+    transform: rotateX(-360deg);}
+}
+
+@-moz-keyframes rotation {
+	from, to {  }
+    10%, 25% { -moz-transform: translateY(0px);
+    transform: translateY(0px);}
+    35%, 50% { -moz-transform: translateY(-300px);
+    transform: translateY(-300px);}
+    60%, 75% { -moz-transform: translateY(-600px);
+    transform: translateY(-600px);}
+    85%, 100% { -moz-transform: translateY(-900px); 
+    transform: translateY(-900px);}
+}
+
+/*Kubens övergripande inställning*/
+.cube
+{
+	position:relative;
+	float:left;
+	width:150px;
+	height:300px;
+	
+	/* Transform */
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;;
+
+	/* Animation */
+	-webkit-animation-name: rotation;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-timing-function: cubic-bezier(0.6, -1, 0.4, 1.5);
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+	
+	-moz-animation-name: rotation;
+    -moz-animation-timing-function: ease;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 15s;
+}
+
+/* Tidinställning för när animationen ska starta */
+#cube1
+{
+	z-index:1;
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+}
+
+#cube2
+{
+	z-index:2;
+	-webkit-animation-delay:1.2s;
+	-moz-animation-delay:1.2s;
+}
+
+#cube3
+{
+	z-index:1;
+	-webkit-animation-delay:1.4s;
+	-moz-animation-delay:1.4s;
+}
+
+/*Inställning för kubens sidor*/
+.cube div
+{
+	background-color:#000;
+	background-size:100% 60%;
+	position: absolute;
+	
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+
+.fb, .tb
+{
+	width:150px;
+	height:300px;
+}
+
+.lr
+{
+	width:300px;
+	height:300px;
+}
+
+/*Inställning för kubens sidor*/
+.facefront
+{
+	background-image:url(../pics/blomma1.png);
+	-webkit-transform: translateZ(150px);  
+	-moz-transform: translateY(0);  
+	-ms-transform: translateZ(150px); 
+	-o-transform: translateZ(150px); 
+	transform: translateZ(150px);
+}
+
+.faceback
+{
+	background-image:url(../pics/fisk1.png);
+	-webkit-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
+	-moz-transform: translateY(300px);
+	-ms-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
+	-o-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);; 
+	transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);;
+}
+
+.facetop
+{
+	background-image:url(../pics/hus1.png);
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+	-moz-transform: translateY(600px);
+	-ms-transform: rotateX(90deg) translateZ(150px);
+	-o-transform: rotateX(90deg) translateZ(150px); 
+	transform: rotateX(90deg) translateZ(150px);
+}
+
+.facebottom
+{
+	background-image:url(../pics/goj1.png);
+	-webkit-transform: rotateX(-90deg) translateZ(150px);
+	-moz-transform: translateY(900px);
+	-ms-transform: rotateX(-90deg) translateZ(150px);
+	-o-transform: rotateX(-90deg) translateZ(150px); 
+	transform: rotateX(-90deg) translateZ(150px);
+}
+
+.faceleft
+{
+	background-color:#000;
+	-webkit-transform: rotateY(90deg) translateZ(0px);
+	-moz-transform: scaleX(0);
+	-ms-transform: rotateY(90deg) translateZ(0px);
+	-o-transform: rotateY(90deg) translateZ(0px); 
+	transform: rotateY(90deg) translateZ(0px);
+}
+
+.faceright
+{
+	background-color:#000;
+	-webkit-transform: rotateY(-90deg) translateZ(150px); 
+	-moz-transform: scaleX(0);
+	-ms-transform: rotateY(-90deg) translateZ(150px);
+	-o-transform: rotateY(-90deg) translateZ(150px); 
+	transform: rotateY(-90deg) translateZ(150px);
+}
+
+#cube1 div
+{
+	background-position:0 0;
+}
+
+#cube2 div
+{
+	background-position:-150px 0;
+}
+
+#cube3 div
+{
+	background-position:-300px 0;
+}
+
+
+
