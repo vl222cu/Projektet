@@ -56,7 +56,7 @@ footer
     color: #FFF;
 }    
 
-#container
+#container 
 {
     width: 960px;
     margin: auto;
@@ -101,7 +101,6 @@ footer
     float: left;
     margin-top: -20px;
     padding-bottom: 50px;
-    
 }
 
 /*<-------------HUVUDHUVUDMENY-------------->*/
@@ -177,8 +176,6 @@ footer
     border-radius: 0 5px 5px 0;
 }
 
-
-
 /*<-------------SUBMENY-------------->*/
 
 #menu .sub:hover ul 
@@ -237,8 +234,6 @@ footer
     clear: both;
 }
 
-
-/*<----------TYPOGRAFI----------->*/
 /*<----------INSTÄLLNINGAR FÖR CSSKNAPPARAR----------->*/
 
 a.button 
@@ -268,7 +263,7 @@ a.button
 	border:1px solid #76819E;
 	display:inline-block;
 	color:#FFFFFF;
-	font-family:Comic Sans MS;
+	font-family: "ABeeZee", "Arial", sans-serif;
 	font-size:12px;
 	font-weight:bold;
 	font-style:normal;
@@ -319,13 +314,10 @@ textarea
     width: 400px;  
     max-width: 400px;  
     height: 150px;  
-    line-height: 150%;  
 }  
   
-input:hover, 
-textarea:hover,  
-input:focus, 
-textarea:focus 
+input:hover, textarea:hover,  
+input:focus, textarea:focus 
 {   
     border-color: #BBB; 
     -moz-box-shadow: rgba(0,0,0, 0.15) 0 0 8px;  
@@ -376,240 +368,15 @@ button
     border-radius: 5px;
 } 
 
-/*<-------------BILDINSTÄLLNINGAR FÖR KONSTGALLERIET-------------->*/
-
-/*Inställning för kub-container där animationen sker*/
-
-#view
-{
-	width:450px;
-	height:300px;
-	margin:5em auto;
-	-webkit-perspective: 450px; 
-	-webkit-perspective-origin:50% 50%; 
-}
-
-@-webkit-keyframes rotation {
-	from, to {  }
-    10%, 25% { -webkit-transform: rotateX(-90deg); 
-    transform: rotateX(-90deg);}
-    35%, 50% { -webkit-transform: rotateX(-180deg);	
-    transform: rotateX(-180deg);}
-    60%, 75% { -webkit-transform: rotateX(-270deg);	
-    transform: rotateX(-270deg);}
-    85%, 100% { -webkit-transform: rotateX(-360deg); 
-    transform: rotateX(-360deg);}
-}
-
-@-moz-keyframes rotation {
-	from, to {  }
-    10%, 25% { -moz-transform: translateY(0);
-    transform: translateY(0);}
-    35%, 50% { -moz-transform: translateY(-300px);
-    transform: translateY(-300px);}
-    60%, 75% { -moz-transform: translateY(-600px);
-    transform: translateY(-600px);}
-    85%, 100% { -moz-transform: translateY(-900px); 
-    transform: translateY(-900px);}
-}
-
-/*Kubens övergripande inställning*/
-
-.cube
-{
-	position:relative;
-	float:left;
-	width:150px;
-	height:300px;
-	
-	/* 3D Transforms attribut */
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;;
-
-	/* Animationattributer för kuben*/
-	-webkit-animation-name: rotation;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-timing-function: cubic-bezier(0.6, -1, 0.4, 1.5);
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 15s;
-	
-	-moz-animation-name: rotation;
-    -moz-animation-timing-function: ease;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-duration: 15s;
-}
-
-/* Tidinställning för när animationen ska starta */
-#cube1
-
-{
-	z-index:1;
-	-webkit-animation-delay:1s;
-	-moz-animation-delay:1s;
-}
-
-
-#cube2
-
-{
-	z-index:2;
-	-webkit-animation-delay:1.2s;
-	-moz-animation-delay:1.2s;
-}
-
-
-#cube3
-
-{
-	z-index:1;
-	-webkit-animation-delay:1.4s;
-	-moz-animation-delay:1.4s;
-}
-
-/*Inställning för kubens sidor*/
-
-.cube div
-
-{
-	background-color:#000;
-	background-size:450px 300px;
-	position:  absolute;
-	
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-}
-
-
-.fb
-
-{
-	width:150px;
-	height:300px;
-}
-
-
-.tb
-
-{
-	width:150px;
-	height:300px;
-}
-
-
-.lr
-
-{
-	width:300px;
-	height:300px;
-}
-
-/* Attributer för varje sida på kuben */
-.facefront
-
-{
-	background-image:url(../pics/blomma1.png);
-	-webkit-transform: translateZ(150px);  
-	-moz-transform: translateY0Y(0);  
-	-ms-transform: translateZ(150px); 
-	-o-transform: translateZ(150px); 
-	transform: translateZ(150px);
-}
-
-
-.faceback
-
-{
-	background-image:url(../pics/fisk1.png);
-	-webkit-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
-	-moz-transform: translateY(300px);
-	-ms-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
-	-o-transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
-	transform: rotateY(180deg) rotateZ(180deg) translateZ(150px);
-}
-
-
-.facetop
-
-{
-	background-image:url(../pics/hus1.png);
-	-webkit-transform: rotateX(90deg) translateZ(150px);
-	-moz-transform: translateY(600px);
-	-ms-transform: rotateX(90deg) translateZ(150px);
-	-o-transform: rotateX(90deg) translateZ(150px); 
-	transform: rotateX(90deg) translateZ(150px);}
-
-
-.facebottom
-
-{
-	background-image:url(../pics/goj1.png);
-	-webkit-transform: rotateX(-90deg) translateZ(150px);
-	-moz-transform:translateY(900px);
-	-ms-transform: rotateX(-90deg) translateZ(150px);
-	-o-transform: rotateX(-90deg) translateZ(150px); 
-	transform: rotateX(-90deg) translateZ(150px);
-}
-
-
-.faceleft
-
-{
-	background-color:#000;
-	-webkit-transform: rotateY(90deg) translateZ(0px);
-	-moz-transform: scaleX(0);
-	-ms-transform: rotateY(90deg) translateZ(0px);
-	-o-transform: rotateY(90deg) translateZ(0px); 
-	transform: rotateY(90deg) translateZ(0px);
-}
-
-
-.faceright
-
-{
-	background-color:#000;
-	-webkit-transform: rotateY(-90deg) translateZ(150px); 
-	-moz-transform: scaleX(0);
-	-ms-transform: rotateY(-90deg) translateZ(150px);
-	-o-transform: rotateY(-90deg) translateZ(150px); 
-	transform: rotateY(-90deg) translateZ(150px);
-}
-
-#cube1 div
-
-{
-	background-position:0 0;
-}
-
-
-#cube2 div
-
-{
-	background-position:-150px 0;
-}
-
-
-#cube3 div
-
-{
-	background-position:-300px 0;
-}
-
 /*<-------------BILDINSTÄLLNINGAR FÖR SLIDESHOW-------------->*/
 
 #slider
 {
-    width: 960px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    width: 600px;
+    float: left;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 170px;
     overflow: hidden;
 }
 
@@ -621,9 +388,76 @@ button
     padding: 0; 
     font-size: 0;
     left: 0;
-    -webkit-animation: 30s slidy infinite;
-    -moz-animation: 30s slidy infinite;
-    animation: 30s slidy infinite;
+    -webkit-animation: 20s slidy infinite;
+    -moz-animation: 20s slidy infinite;
+    animation: 20s slidy infinite;
+}
+
+figure img
+{
+    width: 20%;
+    height: auto;
+}
+
+@keyframes slidy { 
+
+20% { left: 0; }
+
+25% { left: -100%; }
+
+45% { left: -100%; }
+
+50% { left: -200%; }
+
+70% { left: -200%; } 
+
+75% { left: -300%; }
+
+95% { left: -300%; }
+
+100% { left: -400%; } 
+}
+
+@-webkit-keyframes slidy {
+    
+20% { left: 0; }
+
+25% { left: -100%; }
+
+45% { left: -100%; }
+
+50% { left: -200%; }
+
+70% { left: -200%; } 
+
+75% { left: -300%; }
+
+95% { left: -300%; }
+
+100% { left: -400%; } 
+}SLIDESHOW-------------->*/
+
+#slider
+{
+    width: 600px;
+    float: left;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 170px;
+    overflow: hidden;
+}
+
+#slider figure
+{
+    position: relative; 
+    width: 500%;
+    margin: 0; 
+    padding: 0; 
+    font-size: 0;
+    left: 0;
+    -webkit-animation: 20s slidy infinite;
+    -moz-animation: 20s slidy infinite;
+    animation: 20s slidy infinite;
 }
 
 figure img
