@@ -25,7 +25,7 @@ main
 {
     float: left;
     width: 960px;
-    margin-top: 10%;
+    margin-top: -20px;
     position: relative;
 }
 
@@ -65,17 +65,21 @@ footer
 #mainheader
 {
     height: 170px;
-    background-image: url(../pics/Bluerose1.png);
-    background-repeat: repeat;
-    opacity:0.4;
-    filter:alpha(opacity=40); /* För IE8 och tidigare */
+    background-image: url(../pics/logotype.png), -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A4B3DB), color-stop(1, #FFF));
+    background-image: url(../pics/logotype.png), -webkit-linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+    background-image: url(../pics/logotype.png), -moz-linear-gradient( top, #A4B3DB 5%, #FFF 100% );
+    background-image: url(../pics/logotype.png), -o-linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+    background-image: url(../pics/logotype.png), linear-gradient(top, #A4B3DB 5%, #FFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 10px;
 }
 
 #gallery
 {
-    margin-top: -90px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     padding-left: 20px;
+    padding-right: 80px;
 }
 
 .breadcrumb 
@@ -90,7 +94,6 @@ footer
 {
     width: 290px;
     float: left;
-    margin-top: -40px;
     padding-right: 50px;
     padding-left: 20px;
 }
@@ -99,9 +102,10 @@ footer
 {
     width: 600px;
     float: left;
-    margin-top: 20px;
-    padding-bottom: 50px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
+
 
 /*<-------------HUVUDHUVUDMENY-------------->*/
 
@@ -181,6 +185,7 @@ footer
 #menu .sub:hover ul 
 {
     display: block;
+    z-index: 599; 
 }
 
 #menu .sub ul 
@@ -189,14 +194,8 @@ footer
     position: absolute;
     top: 36px;
     left: -1px;
-    min-width: 100%;
     text-align: center;
     width: 100%;
-}
-
-#menu .sub ul li 
-{
-    text-align: center;
 }
 
 #menu .sub ul li a 
@@ -243,7 +242,7 @@ a.button
 	box-shadow:inset 0 -5px 0 0 #76819E;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #76819E), color-stop(1, #A7B3CE));
 	background: -webkit-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
-	background:-moz-linear-gradient( center top, #76819E 5%, #A7B3CE 100% );
+	background:-moz-linear-gradient( top, #76819E 5%, #A7B3CE 100% );
 	background: -o-linear-gradient(top, #76819E 5%, #A7B3CE 100%);
 	background: linear-gradient(top, #76819E 5%, #A7B3CE 100%);
 	background-color:#76819E;
@@ -262,17 +261,18 @@ a.button
 	text-indent:0;
 	border:1px solid #76819E;
 	display:inline-block;
+	margin-top: 20px;
 	color:#FFFFFF;
 	font-family: "ABeeZee", "Arial", sans-serif;
-	font-size:12px;
-	font-weight:bold;
-	font-style:normal;
-	height:50px;
-	line-height:50px;
-	width:120px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:3px 3px 0 #606676;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+	height: 50px;
+	line-height: 50px;
+	width: 120px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 3px 3px 0 #606676;
 }
 
 a.button:hover, a.button:focus
@@ -374,7 +374,7 @@ button
 {
     width: 600px;
     float: left;
-    margin-top: -50px;
+    margin-top: 70px;
     margin-bottom: 50px;
     margin-left: 170px;
     overflow: hidden;
