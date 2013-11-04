@@ -333,7 +333,6 @@ input, textarea
     box-shadow: rgba(0,0,0, 0.3) 0 0 8px; 
 }
 
-  
 textarea 
 {   
     width: 400px;  
@@ -399,17 +398,18 @@ button
 {
     width: 600px;
     float: left;
-    margin-top: 70px;
-    margin-bottom: 50px;
-    margin-left: 170px;
+    margin: 70px 0 50px 170px;
     overflow: hidden;
+    background: #000;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 #slider figure
 {
     position: relative; 
     width: 500%;
-    margin: 0; 
+    margin: 0  0 -10px 0; 
     padding: 0; 
     font-size: 0;
     left: 0;
@@ -424,71 +424,16 @@ figure img
     height: auto;
 }
 
-@keyframes slidy { 
-
-20% { left: 0; }
-
-25% { left: -100%; }
-
-45% { left: -100%; }
-
-50% { left: -200%; }
-
-70% { left: -200%; } 
-
-75% { left: -300%; }
-
-95% { left: -300%; }
-
-100% { left: -400%; } 
-}
-
-@-webkit-keyframes slidy {
-    
-20% { left: 0; }
-
-25% { left: -100%; }
-
-45% { left: -100%; }
-
-50% { left: -200%; }
-
-70% { left: -200%; } 
-
-75% { left: -300%; }
-
-95% { left: -300%; }
-
-100% { left: -400%; } 
-}SLIDESHOW-------------->*/
-
-#slider
+.progress-bar
 {
-    width: 600px;
-    float: left;
-    margin-top: -50px;
-    margin-bottom: 50px;
-    margin-left: 170px;
-    overflow: hidden;
-}
-
-#slider figure
-{
-    position: relative; 
-    width: 500%;
-    margin: 0; 
-    padding: 0; 
-    font-size: 0;
-    left: 0;
-    -webkit-animation: 20s slidy infinite;
-    -moz-animation: 20s slidy infinite;
-    animation: 20s slidy infinite;
-}
-
-figure img
-{
-    width: 20%;
-    height: auto;
+    position: relative;
+    top: -5px;
+    width: 600px; 
+    height: 5px;
+    background: #CCC;
+    animation: fullexpand 25s ease-out infinite;
+    -moz-animation:fullexpand 25s ease-out infinite;
+	-webkit-animation:fullexpand 25s ease-out infinite;
 }
 
 @keyframes slidy { 
@@ -529,7 +474,43 @@ figure img
 100% { left: -400%; } 
 }
 
+@keyframes fullexpand {
+   /* In these keyframes, the progress-bar is stationary */
+   0%, 20%, 40%, 60%, 80%, 100% { width: 0; opacity: 0; }
 
+   /* In these keyframes, the progress-bar starts to come alive */
+   4%, 24%, 44%, 64%, 84% { width: 0; opacity: 0.3; }
 
+   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
 
+   /* In these keyframes, the progress-bar has finished his path */
+   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
 
+   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+}
+
+@-webkit-keyframes fullexpand {
+   /* In these keyframes, the progress-bar is stationary */
+   0%, 20%, 40%, 60%, 80%, 100% { width: 0; opacity: 0; }
+
+   /* In these keyframes, the progress-bar starts to come alive */
+   4%, 24%, 44%, 64%, 84% { width: 0; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+
+   /* In these keyframes, the progress-bar has finished his path */
+   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+
+   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+}
+
+#slider:hover figure, 
+#slider:hover .progress-bar {
+   animation-play-state:paused;
+   -webkit-animation-play-state:paused;
+   -moz-animation-play-state:paused;
+}
