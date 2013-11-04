@@ -6,7 +6,7 @@ header
 }
 
 main
-{    
+{
     width: 100%;
 }
 
@@ -23,7 +23,7 @@ footer
     padding-top: 2%;
     padding-bottom: 2%;
     font-size: 60%;
-}    
+}
 
 #container
 {
@@ -50,7 +50,7 @@ footer
     margin-right: 4%;
 }
 
-.breadcrumb 
+.breadcrumb
 {
     padding: 2% 1%;
     font-size: 2%;
@@ -71,12 +71,23 @@ footer
     margin-left: 3%;
 }
 
+#on_screen
+{
+    display: none;
+}
+
+#on_media
+{
+    display: block;
+    margin: 2%;
+}
+
 /*<-------------HUVUDHUVUDMENY-------------->*/
 
 #menu ul,
 #menu li,
 #menu span,
-#menu a 
+#menu a
 {
     width: 89%;
     text-align: center;
@@ -89,13 +100,13 @@ footer
     border-radius: 5px 5px 5px 5px;
 }
 
-#menu li:first-child a 
+#menu li:first-child a
 {
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;}
 
-#menu li:last-child a 
+#menu li:last-child a
 {
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -104,27 +115,27 @@ footer
 
 /*<-------------SUBMENY-------------->*/
 
-#menu .sub ul 
+#menu .sub ul
 {
     position: static;
     margin-left: 18%;
 }
 
-#menu .sub li a 
+#menu .sub li a
 {
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
 }
 
-#menu .sub li:first-child a 
+#menu .sub li:first-child a
 {
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
 }
 
-#menu .sub li:last-child a 
+#menu .sub li:last-child a
 {
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -150,57 +161,57 @@ p
 
 /*<------INSTÄLLNINGAR FÖR CSSKNAPPAR------>*/
 
-a.button 
+a.button
 {
-	width:98%;
+        width:98%;
 }
 
 /*<-----FORMULÄRINSTÄLLNINGAR----->*/
 
-input, textarea 
-{   
+input, textarea
+{
     width: 88%;
-    padding: 8%;  
+    padding: 8%;
 }
 
-textarea 
-{   
-    width: 88%;  
-    height: 100%;  
-}  
+textarea
+{
+    width: 88%;
+    height: 100%;
+}
 
 label
 {
-   font-size: 80%; 
+   font-size: 80%;
 }
 
-::-webkit-input-placeholder 
+::-webkit-input-placeholder
 {
    font-size: 80%;
 }
 
-::-moz-placeholder 
-{ 
+::-moz-placeholder
+{
    font-size: 80%;
 }
 
-:-moz-placeholder 
-{ 
+:-moz-placeholder
+{
    font-size: 80%;
 }
 
-:-ms-input-placeholder 
-{  
+:-ms-input-placeholder
+{
    font-family: "ABeeZee", "Arial", sans-serif;
    font-size: 80%;
-   color: #888;  
+   color: #888;
 }
   
-button 
-{  
+button
+{
     padding: 3%;
-    font-size: 100%;  
-} 
+    font-size: 100%;
+}
 
 /*<----BILDINSTÄLLNINGAR FÖR SLIDESHOW---->*/
 

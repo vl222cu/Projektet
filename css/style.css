@@ -81,14 +81,12 @@ footer
 
 #mainwrapper
 {
-    margin: 20px 30px 300px 30px;
+    margin: 30px 150px 300px 150px;
 }
 
 #gallery
 {
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 30px 150px 300px 150px;
 }
 
 .breadcrumb 
@@ -96,26 +94,31 @@ footer
     clear: left;
     padding: 10px 5px;
     font-size: 10px;
-    border-bottom: solid #676B6B 1px;
 }
 
 #maincolumn
 {
     width: 290px;
     float: left;
-    margin-top: 10px;
-    padding-right: 50px;
-    padding-left: 20px;
+    margin: 30px 50px 0 50px;
 }
 
 #sidecolumn
 {
     width: 450px;
     float: left;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin: 70px 0 20px 0;
 }
 
+#on_screen
+{
+    margin: 20px 15px 0 40px;
+}
+
+#on_media
+{
+    display: none;
+}
 
 /*<-------------HUVUDHUVUDMENY-------------->*/
 
@@ -297,7 +300,7 @@ a.button
 	width: 120px;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 3px 3px 0 #606676;
+	text-shadow: 1px 1px 0 #606676;
 }
 
 a.button:hover, a.button:focus
@@ -320,8 +323,8 @@ a.button:active
 
 input, textarea 
 {   
-    width: 400px;
-    padding: 9px;  
+    width: 300px;
+    padding: 2px;  
     border: solid 1px #EEE;  
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.03, #DDD), color-stop(1, #FFF)); 
     background: -webkit-linear-gradient(top, #DDD 30%, #FFF 100%);
@@ -335,9 +338,9 @@ input, textarea
 
 textarea 
 {   
-    width: 400px;  
-    max-width: 400px;  
-    height: 150px;  
+    width: 300px;  
+    max-width: 300px;  
+    height: 100px;  
 }  
   
 input:hover, textarea:hover,  
@@ -382,9 +385,9 @@ input:focus, textarea:focus
 button 
 {  
     width: auto;  
-    padding: 9px 15px;  
+    padding: 7px 13px;  
     border: 0;  
-    font-size: 14px;  
+    font-size: 10px;  
     background: #76819E;
     color: #FFF; 
     -webkit-border-radius: 5px;  
@@ -413,6 +416,7 @@ button
     padding: 0; 
     font-size: 0;
     left: 0;
+    animation-name: slidy;
     -webkit-animation: 20s slidy infinite;
     -moz-animation: 20s slidy infinite;
     animation: 20s slidy infinite;
@@ -422,18 +426,6 @@ figure img
 {
     width: 20%;
     height: auto;
-}
-
-.progress-bar
-{
-    position: relative;
-    top: -5px;
-    width: 600px; 
-    height: 5px;
-    background: #CCC;
-    animation: fullexpand 25s ease-out infinite;
-    -moz-animation:fullexpand 25s ease-out infinite;
-	-webkit-animation:fullexpand 25s ease-out infinite;
 }
 
 @keyframes slidy { 
@@ -474,42 +466,56 @@ figure img
 100% { left: -400%; } 
 }
 
+.progress-bar
+{
+    position: relative;
+    top: -5px;
+    width: 600px; 
+    height: 5px;
+    background: #4C4C4C;
+    animation-name: fullexpand;
+    animation: fullexpand 25s ease-out infinite;
+    -moz-animation:fullexpand 25s ease-out infinite;
+	-webkit-animation:fullexpand 25s ease-out infinite;
+}
+
 @keyframes fullexpand {
-   /* In these keyframes, the progress-bar is stationary */
+   /* Utgångspunkten för progress-bar */
    0%, 20%, 40%, 60%, 80%, 100% { width: 0; opacity: 0; }
 
-   /* In these keyframes, the progress-bar starts to come alive */
+   /* Här börjar progress-bar att komma igång */
    4%, 24%, 44%, 64%, 84% { width: 0; opacity: 0.3; }
 
-   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   /* Här rör sig progress-bar framåt i 3 sekunder */
    16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
 
-   /* In these keyframes, the progress-bar has finished his path */
+   /* Slutpunkten för progress-bar */
    17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
 
-   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   /* Här försvinner progress-bar för att sedan återupprepa processen */
    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
 }
 
 @-webkit-keyframes fullexpand {
-   /* In these keyframes, the progress-bar is stationary */
+   /* Utgångspunkten för progress-bar */
    0%, 20%, 40%, 60%, 80%, 100% { width: 0; opacity: 0; }
 
-   /* In these keyframes, the progress-bar starts to come alive */
+   /* Här börjar progress-bar att komma igång */
    4%, 24%, 44%, 64%, 84% { width: 0; opacity: 0.3; }
 
-   /* In these keyframes, the progress-bar moves forward for 3 seconds */
+   /* Här rör sig progress-bar framåt i 3 sekunder */
    16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
 
-   /* In these keyframes, the progress-bar has finished his path */
+   /* Slutpunkten för progress-bar */
    17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
 
-   /* In these keyframes, the progress-bar will disappear and then resume the cycle */
+   /* Här försvinner progress-bar för att sedan återupprepa processen */
    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
 }
 
 #slider:hover figure, 
-#slider:hover .progress-bar {
+#slider:hover .progress-bar
+{
    animation-play-state:paused;
    -webkit-animation-play-state:paused;
    -moz-animation-play-state:paused;
