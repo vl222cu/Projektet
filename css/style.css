@@ -29,19 +29,12 @@ main
     position: relative;
 }
 
-body 
-{
-    font-family: "ABeeZee", "Arial", sans-serif;
-}
-
 nav
 {
     float: left;
     display: block;
     width: 960px;
-    margin-top: -36px;
-    margin-bottom: 30px;
-    margin-left: 5px;
+    margin: -36px 0 30px 5px;
 }
 
 footer
@@ -94,13 +87,14 @@ footer
     clear: left;
     padding: 10px 5px;
     font-size: 10px;
+    border-bottom: 1px solid #AAA;
 }
 
 #maincolumn
 {
     width: 290px;
     float: left;
-    margin: 30px 50px 0 50px;
+    margin: 30px 70px 0 100px;
 }
 
 #sidecolumn
@@ -112,7 +106,7 @@ footer
 
 #on_screen
 {
-    margin: 20px 15px 0 40px;
+    margin: 30px 150px 0 150px;
 }
 
 #on_media
@@ -246,6 +240,11 @@ footer
 }
 
 /*<----------TYPOGRAFI----------->*/
+body
+{
+    font-family: "ABeeZee", "Arial", sans-serif;
+}
+
 h1
 {
     font-size: 20px;
@@ -300,7 +299,7 @@ a.button
 	width: 120px;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 1px 1px 0 #606676;
+	text-shadow: 2px 2px 0 #606676;
 }
 
 a.button:hover, a.button:focus
@@ -401,7 +400,7 @@ button
 {
     width: 600px;
     float: left;
-    margin: 70px 0 50px 170px;
+    margin: 40px 0 50px 170px;
     overflow: hidden;
     background: #000;
     border: 5px solid #eaeaea;
@@ -474,9 +473,9 @@ figure img
     height: 5px;
     background: #4C4C4C;
     animation-name: fullexpand;
-    animation: fullexpand 25s ease-out infinite;
     -moz-animation:fullexpand 25s ease-out infinite;
 	-webkit-animation:fullexpand 25s ease-out infinite;
+	animation: fullexpand 25s ease-out infinite;
 }
 
 @keyframes fullexpand {
